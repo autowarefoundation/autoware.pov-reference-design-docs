@@ -1,97 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/evaluation-and-testing/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/evaluation-and-testing/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/hardware-configuration/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/hardware-configuration/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/hardware-configuration/ECUs/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/hardware-configuration/ECUs/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/hardware-configuration/ECUs/ad-computers/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/hardware-configuration/ECUs/ad-computers/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/hardware-configuration/Sensors-and-Actuators/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/hardware-configuration/Sensors-and-Actuators/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/hardware-configuration/Sensors-and-Actuators/lidars/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/hardware-configuration/Sensors-and-Actuators/lidars/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/hardware-configuration/chassis/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/hardware-configuration/chassis/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/odd-definition/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/odd-definition/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/odd-definition/PoV/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/odd-definition/PoV/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/software-configuration/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/software-configuration/ARM-based_ECU/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/ARM-based_ECU/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/software-configuration/getting-started/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/getting-started/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/software-configuration/middleware-configuration/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/middleware-configuration/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/software-configuration/package-creation/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/package-creation/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/software-configuration/sensor-configuration/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/sensor-configuration/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/software-configuration/workflow-customization/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/workflow-customization/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/software-configuration/x86_64-based_ECU/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/x86_64-based_ECU/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/LSA-reference-design-docs/main/system-configuration/</loc>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/system-configuration/</loc>
          <lastmod>2025-08-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
