@@ -1,11 +1,11 @@
-# Makefile for LSA Reference Design Docs
+# Makefile for PoV Reference Design Docs
 # Installs required MkDocs packages and serves documentation
 
 .PHONY: help prepare serve build clean
 
 # Default target
 help:
-	@echo "LSA Reference Design Documentation - Available commands:"
+	@echo "PoV Reference Design Documentation - Available commands:"
 	@echo "  make prepare      Install required MkDocs packages"
 	@echo "  make serve        Start local development server"
 	@echo "  make build        Build static documentation"
