@@ -1,10 +1,4 @@
 title: Software Configuration
 nav:
   - index.md
-  - getting-started
-  - x86_64-based_ECU
-  - ARM-based_ECU
-  - sensor-configuration
-  - middleware-configuration
-  - workflow-customization
-  - package-creation
+  - installation
