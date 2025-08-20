@@ -18,4 +18,4 @@ make prepare
 make serve
 ```
 
-* You can access the local document on [http://127.0.0.1:8000/LSA-reference-design-docs/](http://127.0.0.1:8000/LSA-reference-design-docs/)
+* You can access the local document on [http://127.0.0.1:8000/autoware.pov-reference-design-docs/](http://127.0.0.1:8000/autoware.pov-reference-design-docs/)

@@ -4,6 +4,10 @@
 
 This document serves a guideline to design and deploy a TRL-6 privately-owned vehicles based on Autoware. The readers can take this document as a starting point to select and configure the hardware and software components of the vehicles.
 
+We use the end-to-end foundation model on the privately-owned vehicles.
+
+![AutoDrive](assets/images/AutoDrive.png)
+
 ## Reference Design Guideline for PoV Vehicles documentation structure
 
 The reference design WG publishes the guidelines for Privately-owned Vehicles (PoV), using the following document structure shown below.

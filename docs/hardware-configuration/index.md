@@ -10,4 +10,18 @@ This section describes the hardware configurations for PoV vehicles, including
 
 The sensors requirements are different based on different PoV version.
 
-TODO: Add the version
+- Vision Pilot
+
+![Vision Pilot](images/VisionPilot.png)
+
+- Vision Pilot Plus
+
+![Vision Pilot Plus](images/VisionPilotPlus.png)
+
+- Vision Pilot Pro
+
+![Vision Pilot Pro](images/VisionPilotPro.png)
+
+- Vision Drive
+
+![Vision Drive](images/VisionDrive.png)
