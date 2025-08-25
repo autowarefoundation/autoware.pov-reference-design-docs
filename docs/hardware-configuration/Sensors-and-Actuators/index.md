@@ -8,7 +8,9 @@ TODO: Add specific models
 Reference: https://autowarefoundation.github.io/LSA-reference-design-docs/main/hardware-configuration/Sensors-and-Actuators/
 
 - Camera: Sony
-- 4D Radar
+- Radar: Bosch, Continental
+- 4D Radar: Bosch, Continental
+- Infrared camera: Sony SenSWIR, Teledyne FLIR
 
 ## Vision Pilot
 
