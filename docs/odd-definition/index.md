@@ -9,3 +9,5 @@ The user scenario we focus on is the highway: 2 lanes of traffic or more, with c
 TODO: Is there any other scenarios?
 
 TODO: How to define the different edge cases?
+
+https://autowarefoundation.github.io/LSA-reference-design-docs/main/odd-definition/outdoor/
