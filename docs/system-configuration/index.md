@@ -18,8 +18,8 @@ Here is the rough GPU requirements:
 
 - Vision Pilot: 50-80 TOPS
 - Vision Pilot Plus: 150 TOPS
-- 500 TOPS: Vision Pilot Pro
-- 1000 TOPS: Vision Drive
+- Vision Pilot Pro: 500 TOPS
+- Vision Drive: 1000 TOPS
 
 NVIDIA GPU is well supported. AMD, Qualcomm and other vendors (e.g. NPU Halio-8) are on the roadmap.
 
