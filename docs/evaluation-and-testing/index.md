@@ -2,4 +2,11 @@
 
 (To be completed)
 
-TODO: Add how to evaluate and test the system, e.g. FPS, datasets?
+## Model Evaluation
+
+- SceneSeg: https://github.com/autowarefoundation/autoware.privately-owned-vehicles/tree/main/SceneSeg#performance-results
+- DomainSeg: https://github.com/autowarefoundation/autoware.privately-owned-vehicles/tree/main/DomainSeg#performance-results
+
+## System Evaluation
+
+- The overall performance for the whole pipeline.

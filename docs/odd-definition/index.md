@@ -6,8 +6,6 @@ Operation Domain Definition (ODD) describes the use scenarios for the vehicles t
 
 The user scenario we focus on is the highway: 2 lanes of traffic or more, with contraflow traffic separated by a barrier or divider.
 
-TODO: Is there any other scenarios?
+TODO: Zain suggests to add the description here
 
-TODO: How to define the different edge cases?
-
-https://autowarefoundation.github.io/LSA-reference-design-docs/main/odd-definition/outdoor/
+https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/hardware-configuration/
