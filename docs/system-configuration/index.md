@@ -12,6 +12,8 @@ TODO: Prefer x86 or ARM
 
 TODO: The spec of the GPU requirement
 
+TODO: Is it possible to use NPU like Halio-8
+
 ## Development Approach
 
 - **Native Installation**: Direct installation on hardware for maximum performance
