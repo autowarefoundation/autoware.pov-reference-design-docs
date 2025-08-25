@@ -434,18 +434,12 @@
             
           
         
-          
-        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
           <a href="../odd-definition/">ODD Definition</a>
-          
-            <label for="__nav_3">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
           
         </div>
       
@@ -456,54 +450,6 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../odd-definition/PoV/">PoV</a>
-          
-        </div>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_3_2">
-          <span class="md-nav__icon md-icon"></span>
-          PoV
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
             
           
         </ul>
@@ -898,9 +844,15 @@
 
 
 <h1 id="software-configuration">Software Configuration<a class="headerlink" href="#software-configuration" title="Permanent link">#</a></h1>
-<p>(To be completed)</p>
 <p>The software we deploy is <a href="https://github.com/autowarefoundation/autoware.privately-owned-vehicles">VisionPilot</a></p>
-<p>TODO: Add a short introduction on those software models.</p>
+<ul>
+<li>Scene3D: Metric and Relative depth estimation of scene elements</li>
+<li>SceneSeg: Semantic segmentation of all foreground objects</li>
+<li>DomainSeg: Semantic segmentation of roadwork zones and construction objects</li>
+<li>EgoSpace: Semantic Segmentation of the drivable road surface</li>
+<li>EgoPath: End-to-end drivable path prediction on roads, with and without lane markings</li>
+<li>EgoLanes: Detection of lanes and road edges defining the driving corridor</li>
+</ul>
 <p><img alt="Software Overview" src="images/software_stack.png" /></p>
 
 

@@ -26,22 +26,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/latest/hardware-configuration/Sensors-and-Actuators/lidars/</loc>
-         <lastmod>2025-08-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/latest/hardware-configuration/chassis/</loc>
          <lastmod>2025-08-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/latest/odd-definition/</loc>
-         <lastmod>2025-08-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/latest/odd-definition/PoV/</loc>
          <lastmod>2025-08-25</lastmod>
          <changefreq>daily</changefreq>
     </url>

@@ -434,18 +434,12 @@
             
           
         
-          
-        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
           <a href="../odd-definition/">ODD Definition</a>
-          
-            <label for="__nav_3">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
           
         </div>
       
@@ -456,54 +450,6 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../odd-definition/PoV/">PoV</a>
-          
-        </div>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_3_2">
-          <span class="md-nav__icon md-icon"></span>
-          PoV
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
             
           
         </ul>
@@ -888,6 +834,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#version" class="md-nav__link">
+    Version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#hardware-selection" class="md-nav__link">
     Hardware Selection
   </a>
@@ -904,13 +857,6 @@
         <li class="md-nav__item">
   <a href="#middleware-choice" class="md-nav__link">
     Middleware Choice
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#version" class="md-nav__link">
-    Version
   </a>
   
 </li>
@@ -936,15 +882,23 @@
 <h1 id="system-configuration">System Configuration<a class="headerlink" href="#system-configuration" title="Permanent link">#</a></h1>
 <p>(To be completed)</p>
 <p>The section describes the system configuration of the PoV vehicles. It shows the options to design your own PoV vehicles. The configuration consists of ECU selection, development approach, middleware candidates, etc.</p>
+<h2 id="version">Version<a class="headerlink" href="#version" title="Permanent link">#</a></h2>
+<p>There are 4 versions on the roadmap.</p>
+<p><img alt="version" src="images/Roadmap.jpg" /></p>
 <h2 id="hardware-selection">Hardware Selection<a class="headerlink" href="#hardware-selection" title="Permanent link">#</a></h2>
 <p>The PoV software stack heavily relies on the inference models, which means high performant GPU is required.</p>
-<p>TODO: Prefer x86 or ARM</p>
-<p>TODO: The spec of the GPU requirement</p>
-<p>TODO: Is it possible to use NPU like Halio-8</p>
+<p>Here is the rough GPU requirements:</p>
+<ul>
+<li>Vision Pilot: 50-80 TOPS</li>
+<li>Vision Pilot Plus: 150 TOPS</li>
+<li>Vision Pilot Pro: 500 TOPS</li>
+<li>Vision Drive: 1000 TOPS</li>
+</ul>
+<p>NVIDIA GPU is well supported. AMD, Qualcomm and other vendors (e.g. NPU Halio-8) are on the roadmap.</p>
 <h2 id="development-approach">Development Approach<a class="headerlink" href="#development-approach" title="Permanent link">#</a></h2>
 <ul>
 <li><strong>Native Installation</strong>: Direct installation on hardware for maximum performance</li>
-<li><strong>Containerized Development</strong>: Reproducible environments with easier team collaboration (recommended for ARM)</li>
+<li><strong>Containerized Development</strong>: Reproducible environments with easier team collaboration (on the roadmap)</li>
 </ul>
 <h2 id="middleware-choice">Middleware Choice<a class="headerlink" href="#middleware-choice" title="Permanent link">#</a></h2>
 <p>Now the PoV supports two kinds of pipeline:</p>
@@ -952,9 +906,6 @@
 <li><strong>ROS</strong>: Able to bridge with the existing Autoware system.</li>
 <li><strong>Zenoh</strong>: High performant middleware.</li>
 </ul>
-<h2 id="version">Version<a class="headerlink" href="#version" title="Permanent link">#</a></h2>
-<p>There are 4 versions on the roadmap.</p>
-<p><img alt="version" src="images/Roadmap.jpg" /></p>
 
 
 
