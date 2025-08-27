@@ -36,17 +36,42 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/latest/hardware-configuration/chassis/</loc>
-         <lastmod>2025-08-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/latest/odd-definition/</loc>
          <lastmod>2025-08-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/latest/software-configuration/</loc>
+         <lastmod>2025-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/latest/software-configuration/DomainSeg/</loc>
+         <lastmod>2025-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/latest/software-configuration/EgoLanes/</loc>
+         <lastmod>2025-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/latest/software-configuration/EgoPath/</loc>
+         <lastmod>2025-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/latest/software-configuration/EgoSpace/</loc>
+         <lastmod>2025-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/latest/software-configuration/Scene3D/</loc>
+         <lastmod>2025-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/latest/software-configuration/SceneSeg/</loc>
          <lastmod>2025-08-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
