@@ -1,4 +1,11 @@
 title: Software Configuration
 nav:
   - index.md
+  - Scene3D
+  - SceneSeg
+  - DomainSeg
+  - EgoSpace
+  - EgoPath
+  - EgoLanes
   - installation
+

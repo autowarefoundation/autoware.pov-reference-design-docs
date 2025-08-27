@@ -6,9 +6,9 @@ The section describes the system configuration of the PoV vehicles. It shows the
 
 ## Version
 
-There are 4 versions on the roadmap.
+There are four phases on the roadmap.
 
-![version](images/Roadmap.jpg)
+![version](assets/images/Roadmap.jpg)
 
 ## Hardware Selection
 
