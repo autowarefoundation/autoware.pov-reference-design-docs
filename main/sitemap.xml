@@ -36,17 +36,42 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/hardware-configuration/chassis/</loc>
-         <lastmod>2025-08-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/odd-definition/</loc>
          <lastmod>2025-08-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/</loc>
+         <lastmod>2025-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/DomainSeg/</loc>
+         <lastmod>2025-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/EgoLanes/</loc>
+         <lastmod>2025-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/EgoPath/</loc>
+         <lastmod>2025-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/EgoSpace/</loc>
+         <lastmod>2025-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/Scene3D/</loc>
+         <lastmod>2025-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/SceneSeg/</loc>
          <lastmod>2025-08-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
