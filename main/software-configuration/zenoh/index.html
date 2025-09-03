@@ -1039,10 +1039,12 @@
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
 <p>We need install zenoh and some dependencies first.</p>
 <ul>
-<li><strong>Zenoh C library</strong>: Required for the transportation.</li>
-<li>Download from <a href="https://github.com/eclipse-zenoh/zenoh-c/releases">the GitHub release</a></li>
 <li>
-<p>You can also add the Eclipse repository for apt server.</p>
+<p><strong>Zenoh C library</strong>: Required for the transportation.</p>
+<ul>
+<li>Download from <a href="https://github.com/eclipse-zenoh/zenoh-c/releases">the GitHub release</a></li>
+<li>You can also add the Eclipse repository for apt server.</li>
+</ul>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-L<span class="w"> </span>https://download.eclipse.org/zenoh/debian-repo/zenoh-public-key<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>gpg<span class="w"> </span>--dearmor<span class="w"> </span>--yes<span class="w"> </span>--output<span class="w"> </span>/etc/apt/keyrings/zenoh-public-key.gpg
 <span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deb [signed-by=/etc/apt/keyrings/zenoh-public-key.gpg] https://download.eclipse.org/zenoh/debian-repo/ /&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/sources.list.d/zenoh.list<span class="w"> </span>&gt;<span class="w"> </span>/dev/null
 sudo<span class="w"> </span>apt<span class="w"> </span>update
@@ -1051,8 +1053,10 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 </li>
 <li>
 <p><strong>CLI11</strong>: Used for the command line interface.</p>
-</li>
+<ul>
 <li>Ubuntu: <code>sudo apt install libcli11-dev</code></li>
+</ul>
+</li>
 </ul>
 <h2 id="build">Build<a class="headerlink" href="#build" title="Permanent link">#</a></h2>
 <ul>
