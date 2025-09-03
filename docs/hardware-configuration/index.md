@@ -9,25 +9,21 @@ This section describes the hardware configurations for PoV vehicles, including
 
 The sensors requirements are different based on different PoV version.
 
-- Vision Pilot: 
-- 
-  - Two front-facing cameras: 
+- Vision Pilot:
+  - Two front-facing cameras:
     - a main camera: 8MP RGB camera with 120 degree horizontal FoV
     - a long-range camera: 8MP RGB camera with 30 degree horizontal FoV
   - One front-facing 4D RADAR.
 
-- Vision Pilot Plus: 
-- 
-  - Two front-facing cameras: 
+- Vision Pilot Plus:
+  - Two front-facing cameras:
     - a main camera: 8MP RGB camera with 120 degree horizontal FoV
     - a long-range camera: 8MP RGB camera with 30 degree horizontal FoV
   - Two 4D RADAR: front and rear
   - Four blindspot Radar
 
-
 - Vision Pilot Pro:
-- 
-  - Two front-facing cameras: 
+  - Two front-facing cameras:
     - a main camera: 8MP RGB camera with 120 degree horizontal FoV
     - a long-range camera: 8MP RGB camera with 30 degree horizontal FoV
   - Two 4D RADAR: front and rear
@@ -35,9 +31,8 @@ The sensors requirements are different based on different PoV version.
   - Four side camera: 8MP RGB camera with 100 degree horizontal FoV
   - Sat-Nav 2D map
 
-- Vision Drive: 
-- 
-  - Two front-facing cameras: 
+- Vision Drive:
+  - Two front-facing cameras:
     - a main camera: 8MP RGB camera with 120 degree horizontal FoV
     - a long-range camera: 8MP RGB camera with 30 degree horizontal FoV
   - One LWIR Camera: 60 degree horizontal FoV
