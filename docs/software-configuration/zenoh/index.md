@@ -5,8 +5,8 @@
 We need install zenoh and some dependencies first.
 
 * **Zenoh C library**: Required for the transportation.
-  * Download from [the GitHub release](https://github.com/eclipse-zenoh/zenoh-c/releases)
-  * You can also add the Eclipse repository for apt server.
+    * Download from [the GitHub release](https://github.com/eclipse-zenoh/zenoh-c/releases)
+    * You can also add the Eclipse repository for apt server.
   
     ```shell
     curl -L https://download.eclipse.org/zenoh/debian-repo/zenoh-public-key | sudo gpg --dearmor --yes --output /etc/apt/keyrings/zenoh-public-key.gpg
@@ -16,7 +16,7 @@ We need install zenoh and some dependencies first.
     ```
 
 * **CLI11**: Used for the command line interface.
-  * Ubuntu: `sudo apt install libcli11-dev`
+    * Ubuntu: `sudo apt install libcli11-dev`
 
 ## Build
 
