@@ -6,11 +6,20 @@ The software we deploy is [VisionPilot](https://github.com/autowarefoundation/au
 
 AutoSeg is comprised of 6 neural network export models which include:
 
-- Scene3D: Metric and Relative depth estimation of scene elements. [Detail](./Scene3D/index.md)
-- SceneSeg: Semantic segmentation of all foreground objects. [Detail](./SceneSeg/index.md)
-- DomainSeg: Semantic segmentation of roadwork zones and construction objects. [Detail](./DomainSeg/index.md)
-- EgoSpace: Semantic Segmentation of the drivable road surface. [Detail](./EgoSpace/index.md)
-- EgoPath: End-to-end drivable path prediction on roads, with and without lane markings. [Detail](./EgoPath/index.md)
-- EgoLanes: Detection of lanes and road edges defining the driving corridor. [Detail](./EgoLanes/index.md)
+- Scene3D: Metric and Relative depth estimation of scene elements.
+- SceneSeg: Semantic segmentation of all foreground objects.
+- DomainSeg: Semantic segmentation of roadwork zones and construction objects.
+- EgoSpace: Semantic Segmentation of the drivable road surface.
+- EgoPath: End-to-end drivable path prediction on roads, with and without lane markings.
+- EgoLanes: Detection of lanes and road edges defining the driving corridor.
 
 ![Software Overview](images/AutoSeg.jpg)
+
+To run the VisionPilot, we need to install some prerequisites first.
+
+- [installation](./installation/index.md)
+
+Now that the Vision Pilot support two kinds of pipeline. You can follow the tutorial below to run the software.
+
+- [ROS 2](./ros2/index.md)
+- [Zenoh](./zenoh/index.md)
