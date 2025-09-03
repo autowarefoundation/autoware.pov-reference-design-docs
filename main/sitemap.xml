@@ -2,87 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/evaluation-and-testing/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/hardware-configuration/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/hardware-configuration/ECUs/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/hardware-configuration/ECUs/ARM/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/hardware-configuration/ECUs/x86_64/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/hardware-configuration/Sensors-and-Actuators/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/odd-definition/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/DomainSeg/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/EgoLanes/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/EgoPath/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/EgoSpace/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/Scene3D/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/SceneSeg/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/installation/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/system-configuration/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

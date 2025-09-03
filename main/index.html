@@ -1281,14 +1281,16 @@
 <p>The Autoware uses the end-to-end foundation model on the privately-owned vehicles, shown as below.</p>
 <p><img alt="AutoDrive" src="assets/images/AutoDrive.png" /></p>
 <h2 id="reference-design-guideline-for-pov-vehicles-documentation-structure">Reference Design Guideline for PoV Vehicles documentation structure<a class="headerlink" href="#reference-design-guideline-for-pov-vehicles-documentation-structure" title="Permanent link">#</a></h2>
-<p>The document publishes the guidelines for Privately-owned Vehicles (PoV), using the following document structure shown below. </p>
+<p>The document publishes the guidelines for Privately-owned Vehicles (PoV), using the following document structure shown below.</p>
 <p><img alt="Reference Design Guideline Structure" src="assets/images/Structure_of_PoV_ReferenceDesign.svg" /></p>
-<p>The document consists of four major components: 
-- ODD Definition defines the operation environment of the PoV.
-- Hardware configuration describes the sensors and actuators used on the PoV. There is no reference physical chassis. 
-- Software configuration describes the process of deploying the software on ECUs. 
-- Evaluation and testing describes the process of evaluating and testing the software for the PoVs. The dataset and performance metrics are shown. </p>
-<p>There are fours phases on designing the software for PoV. The details of the roadmap are discussed on <a href="https://github.com/autowarefoundation/autoware.privately-owned-vehicles">this page</a>. Below summarizes the configuration and expected outcomes for each phase. This document provides the design guideline for Vision Pilot in Phase 1. </p>
+<p>The document consists of four major components:</p>
+<ul>
+<li>ODD Definition defines the operation environment of the PoV.</li>
+<li>Hardware configuration describes the sensors and actuators used on the PoV. There is no reference physical chassis.</li>
+<li>Software configuration describes the process of deploying the software on ECUs.</li>
+<li>Evaluation and testing describes the process of evaluating and testing the software for the PoVs. The dataset and performance metrics are shown.</li>
+</ul>
+<p>There are fours phases on designing the software for PoV. The details of the roadmap are discussed on <a href="https://github.com/autowarefoundation/autoware.privately-owned-vehicles">this page</a>. Below summarizes the configuration and expected outcomes for each phase. This document provides the design guideline for Vision Pilot in Phase 1.</p>
 <ul>
 <li><strong>Vision Pilot</strong> (Phase 1): using 1x forward front-facing RGB camera to enable near and long-range sensing to enable SAE Level 2+/2++ automation.</li>
 <li><strong>Vision Pilot - Plus</strong> (Phase 2): using 1x forward front-facing RGB camera and 1x forward front-facing high
@@ -1296,7 +1298,7 @@ resolution 4D radar, and 2x Blindspot monitoring automotive corner RADAR  to ena
 <li><strong>Vision Pilot - Pro</strong> (Phase 3): using 3x forward front-facing RGB camera, 1x forward front-facing high
 resolution 4D radar, 2x Blindspot monitoring automotive corner RADAR, and standard 2D Navigational map
 with GPS to enable SAE Level 3 automation.</li>
-<li><strong> Vision Drive</strong> (Phase 4): using 3x forward front-facing RGB camera, 1x forward front-facing high
+<li><strong>Vision Drive</strong> (Phase 4): using 3x forward front-facing RGB camera, 1x forward front-facing high
 resolution 4D radar, 2x Blindspot monitoring automotive corner RADAR, and standard 2D Navigational map
 with GPS to enable SAE Level 4 automation.</li>
 </ul>
