@@ -8,5 +8,10 @@
     "version": "latest",
     "title": "latest",
     "aliases": []
+  },
+  {
+    "version": "fix_mkdocs",
+    "title": "fix_mkdocs",
+    "aliases": []
   }
 ]
