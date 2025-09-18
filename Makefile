@@ -25,4 +25,4 @@ clean:
 
 # Install mkdocs dependencies
 prepare:
-	docker build -t mkdocs-dev .
+	docker build --no-cache -t mkdocs-dev .
