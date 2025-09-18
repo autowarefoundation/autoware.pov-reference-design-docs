@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - mkdocs.yaml
+      - mkdocs.yml
       - "**/*.md"
       - "**/*.svg"
       - "**/*.png"
