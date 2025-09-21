@@ -1288,43 +1288,19 @@
 <h1 id="system-configuration">System Configuration<a class="headerlink" href="#system-configuration" title="Permanent link">#</a></h1>
 <p>The section describes the system configuration of the PoV vehicles. It shows the options to design your own PoV vehicles. The configuration consists of ECU selection, development approach, middleware candidates, etc.</p>
 <p>The system for PoV is still under software development (2025.09). This document will be updated when more information is available. This guideline provides the software architecture and software deployment. </p>
-<p>The system is organized as the following. VisionPilot separates core AI processing from middleware-specific implementations, enabling seamless deployment across different robotic frameworks. It supports ROS2 and Zenoh as the middleware layer. In the common layer, there are inference enginers, visualization engines, and sensor input processing module. 
+<p>The system is organized as the following. VisionPilot separates core AI processing from middleware-specific implementations, enabling seamless deployment across different robotic frameworks. It supports ROS2 and Zenoh as the middleware layer. In the common layer, there are inference engineers, visualization engines, and sensor input processing module. </p>
 <div class="highlight"><pre><span></span><code>┌─────────────────────────────────────────────────────────┐
 │                    MIDDLEWARE LAYER                     │
-├─────────────────────┬───────────────────┬───────────────┤
-│       ROS2          │      Zenoh        │    Future     │
-│   Implementation    │  Implementation   │ Middlewares   │
-│                     │                   │               │
-│   ┌─────────────┐   │  ┌─────────────┐  │               │
-│   │ ROS2 Nodes  │   │  │ Zenoh Nodes │  │      ...      │
-│   │ &amp; Topics    │   │  │ &amp; Messages  │  │               │
-│   └─────────────┘   │  └─────────────┘  │               │
-└─────────────────────┴───────────────────┴───────────────┘
-                       │                   
-┌─────────────────────────────────────────────────────────┐
-│                    COMMON LAYER                         │
-│              (Framework Independent)                    │
-├─────────────────────┬───────────────────┬───────────────┤
-│  Inference Backends │ Visualization     │ Sensor Input  │
-│                     │ Engines          │ Processing    │
-│  • ONNX Runtime     │                   │               │
-│  • TensorRT         │ • Segmentation    │ • Video       │
-│  • Custom Backends  │ • Depth Maps     │ • Camera      │
-│                     │ • Point Clouds    │ • Streaming   │
-└─────────────────────┴───────────────────┴───────────────┘
-</code></pre></div></p>
-<div class="highlight"><pre><span></span><code>┌─────────────────────────────────────────────────────────┐
-│                    MIDDLEWARE LAYER                     │
-├─────────────────────┬───────────────────┬───────────────┤
-│       ROS2          │      Zenoh        │    Future     │
-│   Implementation    │  Implementation   │ Middlewares   │
-│                     │                   │               │
-│   ┌─────────────┐   │  ┌─────────────┐  │               │
-│   │ ROS2 Nodes  │   │  │ Zenoh Nodes │  │      ...      │
-│   │ &amp; Topics    │   │  │ &amp; Messages  │  │               │
-│   └─────────────┘   │  └─────────────┘  │               │
-└─────────────────────┴───────────────────┴───────────────┘
-                       │                   
+├─────────────────────┬──────────────────┬────────────────┤
+│       ROS2          │      Zenoh       │     Future     │
+│   Implementation    │  Implementation  │  Middlewares   │
+│                     │                  │                │
+│   ┌─────────────┐   │  ┌─────────────┐ │                │
+│   │ ROS2 Nodes  │   │  │ Zenoh Nodes │ │      ...       │
+│   │ &amp; Topics    │   │  │ &amp; Messages  │ │                │
+│   └─────────────┘   │  └─────────────┘ │                │
+└─────────────────────┴──────────────────┴────────────────┘
+                                │                   
 ┌─────────────────────────────────────────────────────────┐
 │                    COMMON LAYER                         │
 │              (Framework Independent)                    │
