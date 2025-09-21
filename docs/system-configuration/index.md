@@ -6,6 +6,7 @@ The system for PoV is still under software development (2025.09). This document 
 
 The system is organized as the following. VisionPilot separates core AI processing from middleware-specific implementations, enabling seamless deployment across different robotic frameworks. It supports ROS2 and Zenoh as the middleware layer. In the common layer, there are inference enginers, visualization engines, and sensor input processing module. 
 
+```
 ┌─────────────────────────────────────────────────────────┐
 │                    MIDDLEWARE LAYER                     │
 ├─────────────────────┬───────────────────┬───────────────┤
@@ -23,12 +24,13 @@ The system is organized as the following. VisionPilot separates core AI processi
 │              (Framework Independent)                    │
 ├─────────────────────┬───────────────────┬───────────────┤
 │  Inference Backends │ Visualization     │ Sensor Input  │
-│                     │ Engines          │ Processing    │
+│                     │ Engines           │ Processing    │
 │  • ONNX Runtime     │                   │               │
 │  • TensorRT         │ • Segmentation    │ • Video       │
-│  • Custom Backends  │ • Depth Maps     │ • Camera      │
+│  • Custom Backends  │ • Depth Maps      │ • Camera      │
 │                     │ • Point Clouds    │ • Streaming   │
 └─────────────────────┴───────────────────┴───────────────┘
+```
 
 ## Version
 
