@@ -1,5 +1,5 @@
 # Introduction
-  
+
 ## About Reference Design Guideline for PoV Vehicles
 
 This document serves a guideline to design and deploy a TRL-6 privately-owned vehicles based on Autoware. The readers can take this document as a starting point to select and configure the hardware and software components of the vehicles.
