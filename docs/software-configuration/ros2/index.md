@@ -53,3 +53,5 @@ ros2 run image_tools showimage --ros-args -r image:=auto3d/scene_3d/viz # Visual
 
 !!! warning
     It will take sometimes to transform ONNX into TensorRT format first time you run the model.
+
+![](../images/SceneSeg_ROS2.png)

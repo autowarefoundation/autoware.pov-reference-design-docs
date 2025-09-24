@@ -58,3 +58,5 @@ just run_scene3d
 
 !!! warning
     It will take sometimes to transform ONNX into TensorRT format first time you run the model.
+
+![](../images/SceneSeg_Zenoh.png)
