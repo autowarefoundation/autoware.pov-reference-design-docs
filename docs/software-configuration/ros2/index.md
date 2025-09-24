@@ -7,15 +7,20 @@ We can follow [the tutorial](https://docs.ros.org/en/humble/Installation/Ubuntu-
 ```bash
 # ROS2 packages
 sudo apt install ros-humble-cv-bridge ros-humble-image-transport
-
 # Build tools
 sudo apt install cmake build-essential
-
-# ONNX Runtime (Download from releases)
-# TensorRT (NVIDIA SDK)
 ```
 
 ## Build
+
+* Clean the project
+
+```bash
+rm -rf build install log
+```
+
+* Build the code
+    * Note that you need to update the path of the onnxruntime
 
 ```bash
 cd ROS2
@@ -35,12 +40,15 @@ source install/setup.bash
 ros2 launch models run_pipeline.launch.py \
   pipeline:=scene_seg \
   video_path:="../data/video.mp4"
-# SceneSeg
+# DomainSeg
 ros2 launch models run_pipeline.launch.py \
   pipeline:=domain_seg \
   video_path:="../data/video.mp4"
-# SceneSeg
+# Scene3D
 ros2 launch models run_pipeline.launch.py \
   pipeline:=scene3d \
   video_path:="../data/video.mp4"
 ```
+
+!!! warning
+    It will take sometimes to transform ONNX into TensorRT format first time you run the model.

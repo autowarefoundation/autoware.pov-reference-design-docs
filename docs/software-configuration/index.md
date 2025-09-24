@@ -17,7 +17,7 @@ AutoSeg is comprised of 6 neural network expert models which include:
 
 To run the VisionPilot, we need to install some prerequisites first.
 
-- [installation](./installation/index.md)
+- [Installation](./installation/index.md)
 
 Now that the Vision Pilot support two kinds of pipeline. You can follow the tutorial below to run the software.
 
