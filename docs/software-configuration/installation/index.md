@@ -25,7 +25,7 @@ Since VisionPilot requires AI packages, we need to install the following package
 * Download the code
 
 ```bash
-git clone https://github.com/autowarefoundation/autoware.privately-owned-vehicles.git
+git clone https://github.com/evshary/autoware.privately-owned-vehicles.git -b zenoh_more_models
 cd autoware.privately-owned-vehicles/VisionPilot
 ```
 
