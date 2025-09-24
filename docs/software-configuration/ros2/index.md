@@ -46,8 +46,9 @@ ros2 launch models run_pipeline.launch.py \
   video_path:="../data/video.mp4"
 # Scene3D
 ros2 launch models run_pipeline.launch.py \
-  pipeline:=scene3d \
+  pipeline:=scene_3d \
   video_path:="../data/video.mp4"
+ros2 run image_tools showimage --ros-args -r image:=auto3d/scene_3d/viz # Visualize
 ```
 
 !!! warning
