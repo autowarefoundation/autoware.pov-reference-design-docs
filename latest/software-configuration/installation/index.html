@@ -1240,6 +1240,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#system-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
@@ -1249,9 +1258,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#models" class="md-nav__link">
+  <a href="#get-the-code-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Models
+      Get the code &amp; data
     </span>
   </a>
   
@@ -1277,9 +1286,13 @@
 
 
 <h1 id="software-installation">Software installation<a class="headerlink" href="#software-installation" title="Permanent link">#</a></h1>
-<p>We suggest to use Ubuntu 22.04 for the software stack.
-Since VisionPilot requires AI packages, we need to install the following packages first.</p>
+<h2 id="system-requirements">System Requirements<a class="headerlink" href="#system-requirements" title="Permanent link">#</a></h2>
+<ul>
+<li>Operating System: Ubuntu 22.04</li>
+<li>NVIDIA GPU</li>
+</ul>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">#</a></h2>
+<p>Since VisionPilot requires AI packages, we need to install the following packages first.</p>
 <ul>
 <li><strong>CUDA</strong>: Optional for GPU processing.</li>
 <li><strong>OpenCV</strong>: For image and video processing.<ul>
@@ -1294,29 +1307,39 @@ Since VisionPilot requires AI packages, we need to install the following package
 <li>Download from <a href="https://pytorch.org/get-started/locally/">the PyTorch website</a></li>
 </ul>
 </li>
+<li><strong>TensorRT</strong>: Improve the inference performance.<ul>
+<li>Download from <a href="https://developer.nvidia.com/tensorrt">the website</a></li>
+<li>Follow <a href="https://docs.nvidia.com/deeplearning/tensorrt/latest/installing-tensorrt/installing.html">the tutorial</a> to install.</li>
 </ul>
-<h2 id="models">Models<a class="headerlink" href="#models" title="Permanent link">#</a></h2>
-<p>The following models will be used in the pipeline.</p>
+</li>
+</ul>
+<h2 id="get-the-code-data">Get the code &amp; data<a class="headerlink" href="#get-the-code-data" title="Permanent link">#</a></h2>
 <ul>
-<li>SceneSeg - segmentation of foreground objects:<ul>
-<li><a href="https://drive.google.com/file/d/1vCZMdtd8ZbSyHn1LCZrbNKMK7PQvJHxj/view?usp=sharing">Link to Download Pytorch Model Weights *.pth</a></li>
-<li><a href="https://drive.google.com/file/d/1G2pKrjEGLGY1ouQdNPh11N-5LlmDI7ES/view?usp=drive_link">Link to Download Traced Pytorch Model *.pt</a></li>
-<li><a href="https://drive.google.com/file/d/1l-dniunvYyFKvLD7k16Png3AsVTuMl9f/view?usp=drive_link">Link to Download ONNX FP32 Weights *.onnx</a></li>
+<li>Download the code</li>
 </ul>
-</li>
-<li>Scene3D - monocular depth estimation<ul>
-<li><a href="https://drive.google.com/file/d/1MrKhfEkR0fVJt-SdZEc0QwjwVDumPf7B/view?usp=sharing">Link to Download Pytorch Model Weights *.pth</a></li>
-<li><a href="https://drive.google.com/file/d/1-LO3j2YCvwxeNLzyLrnzEwalTrYUZgK0/view?usp=drive_link">Link to Download Traced Pytorch Model *.pt</a></li>
-<li><a href="https://drive.google.com/file/d/19gMPt_1z4eujo4jm5XKuH-8eafh-wJC6/view?usp=drive_link">Link to Download ONNX FP32 Weights *.onnx</a></li>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/autowarefoundation/autoware.privately-owned-vehicles.git
+<span class="nb">cd</span><span class="w"> </span>autoware.privately-owned-vehicles/VisionPilot
+</code></pre></div>
+<ul>
+<li>Download the video: You can download any dashcam video on YouTube</li>
 </ul>
-</li>
-<li>DomainSeg - segmentation of construction objects<ul>
-<li><a href="https://drive.google.com/file/d/1sYa2ltivJZEWMsTFZXAOaHK--Ovnadu2/view?usp=drive_link">Link to Download Pytorch Model Weights *.pth</a></li>
-<li><a href="https://drive.google.com/file/d/12fLHpx3IZDglRJaDZT9kMhsV-f6ZTyks/view?usp=drive_link">Link to Download Traced Pytorch Model *.pt</a></li>
-<li><a href="https://drive.google.com/file/d/1zCworKw4aQ9_hDBkHfj1-sXitAAebl5Y/view?usp=drive_link">Link to Download ONNX FP32 Weights *.onnx</a></li>
+<div class="highlight"><pre><span></span><code><span class="c1"># Create a folder for the video and models</span>
+mkdir<span class="w"> </span>-p<span class="w"> </span>data
+<span class="nb">cd</span><span class="w"> </span>data
+<span class="c1"># Put your video here, and name it as video.mp4</span>
+</code></pre></div>
+<ul>
+<li>Download the models</li>
 </ul>
-</li>
-</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># Tool to download from Google Drive</span>
+pipx<span class="w"> </span>install<span class="w"> </span>gdown
+<span class="c1"># SceneSeg</span>
+gdown<span class="w"> </span>-O<span class="w"> </span>models/<span class="w"> </span><span class="s1">&#39;https://docs.google.com/uc?export=download&amp;id=1l-dniunvYyFKvLD7k16Png3AsVTuMl9f&#39;</span>
+<span class="c1"># Scene3D</span>
+gdown<span class="w"> </span>-O<span class="w"> </span>models/<span class="w"> </span><span class="s1">&#39;https://docs.google.com/uc?export=download&amp;id=19gMPt_1z4eujo4jm5XKuH-8eafh-wJC6&#39;</span>
+<span class="c1"># DomainSeg</span>
+gdown<span class="w"> </span>-O<span class="w"> </span>models/<span class="w"> </span><span class="s1">&#39;https://docs.google.com/uc?export=download&amp;id=1zCworKw4aQ9_hDBkHfj1-sXitAAebl5Y&#39;</span>
+</code></pre></div>
 
 
 
