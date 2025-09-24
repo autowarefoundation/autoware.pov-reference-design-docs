@@ -1,6 +1,6 @@
 # Zenoh
 
-## Installation
+## Dependencies
 
 We need install zenoh and some dependencies first.
 
@@ -8,7 +8,7 @@ We need install zenoh and some dependencies first.
     * Download from [the GitHub release](https://github.com/eclipse-zenoh/zenoh-c/releases)
     * You can also add the Eclipse repository for apt server.
   
-    ```shell
+    ```bash
     curl -L https://download.eclipse.org/zenoh/debian-repo/zenoh-public-key | sudo gpg --dearmor --yes --output /etc/apt/keyrings/zenoh-public-key.gpg
     echo "deb [signed-by=/etc/apt/keyrings/zenoh-public-key.gpg] https://download.eclipse.org/zenoh/debian-repo/ /" | sudo tee /etc/apt/sources.list.d/zenoh.list > /dev/null
     sudo apt update
@@ -18,47 +18,43 @@ We need install zenoh and some dependencies first.
 * **CLI11**: Used for the command line interface.
     * Ubuntu: `sudo apt install libcli11-dev`
 
+* **just**: Simplify the command.
+
+  ```bash
+  # If you are using Ubuntu 22.04
+  wget -qO - 'https://proget.makedeb.org/debian-feeds/prebuilt-mpr.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg 1> /dev/null
+  echo "deb [arch=all,$(dpkg --print-architecture) signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.makedeb.org prebuilt-mpr $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/prebuilt-mpr.list
+  sudo apt update
+  # If not, just install it directly
+  sudo apt install just
+  ```
+
+* **parallel**: Run commands in parallel
+
+  ```bash
+  sudo apt install parallel
+  ```
+
 ## Build
 
-* Environment setup
+* Note that you need to export the path you install libraries first
 
-```shell
-export PATH=/usr/local/cuda/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
-```
-
-* Configure with cmake
-
-```shell
-mkdir build && cd build
-cmake .. \
-    -DLIBTORCH_INSTALL_ROOT=/path/to/libtorch/ \
-    -DONNXRUNTIME_ROOTDIR=/path/to/onnxruntime-linux-x64-gpu-1.22.0 \
-    -DUSE_CUDA_BACKEND=True
-```
-
-* Build
-
-```shell
-make
+```bash
+export LIBTORCH_INSTALL_ROOT=/path/to/libtorch/
+export ONNXRUNTIME_ROOTDIR=/path/to/onnxruntime-linux-x64-gpu-1.22.0
+cd Zenoh
+just all
 ```
 
 ## Usage
 
-After a successful build, you will find two executables in the `build` directory.
-
-### Video Visualization
-
-Subscribe a video from a Zenoh publisher and then publish it to a Zenoh Subscriber.
-
-* Usage the video publisher and subscriber
-
 ```bash
-# Terminal 1
-./video_publisher -k video/input
-# Terminal 2
-./run_model SceneSeg_FP32.onnx -i video/input -o video/output
-./run_model DomainSeg_FP32.onnx -i video/input -o video/output
-# Terminal 3
-./video_subscriber -k video/output
+# Original video pub/sub
+just run_video_pubsub
+# SceneSeg
+just run_sceneseg
+# DomainSeg
+just run_domainseg
+# Scene3D
+just run_scene3d
 ```

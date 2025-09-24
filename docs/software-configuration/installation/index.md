@@ -12,20 +12,37 @@ Since VisionPilot requires AI packages, we need to install the following package
     * Download from [the GitHub release](https://github.com/microsoft/onnxruntime/releases)
 * **LibTorch**: For tensor manipulation capabilities.
     * Download from [the PyTorch website](https://pytorch.org/get-started/locally/)
+* **TensorRT**: Improve the inference performance.
+    * Download from [the website](https://developer.nvidia.com/tensorrt)
+    * Follow [the tutorial](https://docs.nvidia.com/deeplearning/tensorrt/latest/installing-tensorrt/installing.html) to install.
 
-## Models
+## Get the code & data
 
-The following models will be used in the pipeline.
+* Download the code
 
-* SceneSeg - segmentation of foreground objects:
-    * [Link to Download Pytorch Model Weights *.pth](https://drive.google.com/file/d/1vCZMdtd8ZbSyHn1LCZrbNKMK7PQvJHxj/view?usp=sharing)
-    * [Link to Download Traced Pytorch Model *.pt](https://drive.google.com/file/d/1G2pKrjEGLGY1ouQdNPh11N-5LlmDI7ES/view?usp=drive_link)
-    * [Link to Download ONNX FP32 Weights *.onnx](https://drive.google.com/file/d/1l-dniunvYyFKvLD7k16Png3AsVTuMl9f/view?usp=drive_link)
-* Scene3D - monocular depth estimation
-    * [Link to Download Pytorch Model Weights *.pth](https://drive.google.com/file/d/1MrKhfEkR0fVJt-SdZEc0QwjwVDumPf7B/view?usp=sharing)
-    * [Link to Download Traced Pytorch Model *.pt](https://drive.google.com/file/d/1-LO3j2YCvwxeNLzyLrnzEwalTrYUZgK0/view?usp=drive_link)
-    * [Link to Download ONNX FP32 Weights *.onnx](https://drive.google.com/file/d/19gMPt_1z4eujo4jm5XKuH-8eafh-wJC6/view?usp=drive_link)
-* DomainSeg - segmentation of construction objects
-    * [Link to Download Pytorch Model Weights *.pth](https://drive.google.com/file/d/1sYa2ltivJZEWMsTFZXAOaHK--Ovnadu2/view?usp=drive_link)
-    * [Link to Download Traced Pytorch Model *.pt](https://drive.google.com/file/d/12fLHpx3IZDglRJaDZT9kMhsV-f6ZTyks/view?usp=drive_link)
-    * [Link to Download ONNX FP32 Weights *.onnx](https://drive.google.com/file/d/1zCworKw4aQ9_hDBkHfj1-sXitAAebl5Y/view?usp=drive_link)
+   ```bash
+   git clone https://github.com/autowarefoundation/autoware.privately-owned-vehicles.git
+   cd autoware.privately-owned-vehicles/VisionPilot
+   ```
+
+* Download the video: You can download any dashcam video on YouTube
+
+   ```bash
+   # Create a folder for the video and models
+   mkdir -p data
+   cd data
+   # Put your video here, and name it as video.mp4
+   ```
+
+* Download the models
+
+   ```bash
+   # Tool to download from Google Drive
+   pipx install gdown
+   # SceneSeg
+   gdown -O models/ 'https://docs.google.com/uc?export=download&id=1l-dniunvYyFKvLD7k16Png3AsVTuMl9f'
+   # Scene3D
+   gdown -O models/ 'https://docs.google.com/uc?export=download&id=19gMPt_1z4eujo4jm5XKuH-8eafh-wJC6'
+   # DomainSeg
+   gdown -O models/ 'https://docs.google.com/uc?export=download&id=1zCworKw4aQ9_hDBkHfj1-sXitAAebl5Y'
+   ```
