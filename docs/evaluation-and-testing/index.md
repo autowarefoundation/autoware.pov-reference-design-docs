@@ -24,12 +24,11 @@ The section shows the benchmark results of the VisionPilot model on different ha
 
 #### Hardware Spec
 
-
 - **CPU**:  Intel Xeon E-2278GE (16 cores)
 - **GPU**: NVIDIA Quadro RTX 5000.
 - **Memory**: 64GB LPDDR5/16G on RTX 5000
-- **Driver**: 
-- **ROS**: ROS Humble with Autoware recommended Cyclone DDS settings.
+- **Driver**: Driver Version: 580.82.07 & CUDA Version: 13.0
+- **ROS**: ROS Jazzy & Zenoh
 - **Runtime**: TensorRT
 - **OS**: Ubuntu 24.04.3
 
@@ -37,13 +36,12 @@ The section shows the benchmark results of the VisionPilot model on different ha
 
 - Zenoh:
 
-
-| Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
-|:---:|:---:|:---:|:---:|:---:|
-| SceneSeg   | 13%  | 65%  | 20G  | 58  |
-| DomainSeg  | 14%  | 62%  | 21G  | 58  |
-| Scene3D  | 15%  | 69%  |  19G | 57  |
-| EgoSpace |   |   |   |   |
+    | Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
+    |:---:|:---:|:---:|:---:|:---:|
+    | SceneSeg   | 13%  | 65%  | 20G  | 58  |
+    | DomainSeg  | 14%  | 62%  | 21G  | 58  |
+    | Scene3D  | 15%  | 69%  |  19G | 57  |
+    | EgoSpace |   |   |   |   |
 
     - SceneSeg
   
@@ -80,12 +78,12 @@ The section shows the benchmark results of the VisionPilot model on different ha
 
 - ROS 2:
 
-| Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
-|:---:|:---:|:---:|:---:|:---:|
-| SceneSeg   | 17% | 72% | 6G | 60  |
-| DomainSeg  | 16% | 68% | 6G | 60  |
-| Scene3D  | 16% | 67% | 5.9G | 60  |
-| EgoSpace |   |   |   |   |
+    | Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
+    |:---:|:---:|:---:|:---:|:---:|
+    | SceneSeg   | 17% | 72% | 6G | 60  |
+    | DomainSeg  | 16% | 68% | 6G | 60  |
+    | Scene3D  | 16% | 67% | 5.9G | 60  |
+    | EgoSpace |   |   |   |   |
 
     - SceneSeg
   
