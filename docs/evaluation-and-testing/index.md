@@ -35,10 +35,8 @@ The overall performance for the whole pipeline.
     * Output time: 199 us
     ```
 
-- DomainSeg
+    - DomainSeg
 
-    - SceneSeg
-  
     ```raw
     Current FPS: 58
     --- Per-frame Timing (microseconds) ---
@@ -48,10 +46,8 @@ The overall performance for the whole pipeline.
     * Output time: 171 us
     ```
 
-- Scene3D
+    - Scene3D
 
-    - SceneSeg
-  
     ```raw
     Current FPS: 57
     --- Per-frame Timing (microseconds) ---
@@ -59,4 +55,29 @@ The overall performance for the whole pipeline.
     * Preprocessing time: 204 us
     * Inference time: 16817 us
     * Output time: 462 us
+    ```
+
+- ROS 2:
+
+    - SceneSeg
+  
+    ```raw
+    * Current FPS: 60
+    --- Per-frame Timing (microseconds) --- 
+    * Total processing time: 16272 us
+    * Preprocessing time: 178 us
+    * Inference time: 15713 us
+    * Output time: 381 us
+    ```
+
+    - DomainSeg
+
+    ```raw
+    * Current FPS: 60.00
+    --- Per-frame Timing (microseconds) --- 
+    * Total processing time: 15393 us
+    * Preprocessing time: 253 us
+    * Inference time: 14672 us
+    * Output time: 467 us
+    -------------------------- 
     ```
