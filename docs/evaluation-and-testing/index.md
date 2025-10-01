@@ -31,6 +31,14 @@ The section shows the benchmark results of the VisionPilot model on different ha
 
 - Zenoh:
 
+
+| Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
+|:---:|:---:|:---:|:---:|:---:|
+| SceneSeg   |   |   |   | 58  |
+| DomainSeg  |   |   |   | 58  |
+| Scene3D  |   |   |   | 57  |
+| EgoSpace |   |   |   |   |
+
     - SceneSeg
   
     ```raw
@@ -66,6 +74,13 @@ The section shows the benchmark results of the VisionPilot model on different ha
 
 - ROS 2:
 
+| Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
+|:---:|:---:|:---:|:---:|:---:|
+| SceneSeg   |   |   |   | 60  |
+| DomainSeg  |   |   |   | 60  |
+| Scene3D  |   |   |   | 60  |
+| EgoSpace |   |   |   |   |
+
     - SceneSeg
   
     ```raw
@@ -91,12 +106,12 @@ The section shows the benchmark results of the VisionPilot model on different ha
 
 ### ARM processors and nVidia AGX Orin
 #### Hardware spec:
-    - **CPU**: 12-core ARM Cortex-A78AE CPU at 2.2GHz.
-    - **GPU**: NVIDIA Ampere GPU with 2048 CUDA Cores.
-    - **Memory**: 64GB LPDDR5. The system and GPU memories are shared.
-    - **Driver**: The NVIDIA JetPack 6.0 (Ubuntu 22.04 LTS based) was used.
-    - **ROS**: ROS Humble with Autoware recommended Cyclone DDS settings.
-    - **Runtime**: ONNX runtime  1.19.0 or TensorRT
+- **CPU**: 12-core ARM Cortex-A78AE CPU at 2.2GHz.
+- **GPU**: NVIDIA Ampere GPU with 2048 CUDA Cores.
+- **Memory**: 64GB LPDDR5. The system and GPU memories are shared.
+- **Driver**: The NVIDIA JetPack 6.0 (Ubuntu 22.04 LTS based) was used.
+- **ROS**: ROS Humble with Autoware recommended Cyclone DDS settings.
+- **Runtime**: ONNX runtime  1.19.0 or TensorRT
 
 #### Benchmark results: 
 
