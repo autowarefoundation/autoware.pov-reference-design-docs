@@ -1313,15 +1313,15 @@
 <li><strong>CPU</strong>:  Intel Xeon E-2278GE (16 cores)</li>
 <li><strong>GPU</strong>: NVIDIA Quadro RTX 5000.</li>
 <li><strong>Memory</strong>: 64GB LPDDR5/16G on RTX 5000</li>
-<li><strong>Driver</strong>: </li>
-<li><strong>ROS</strong>: ROS Humble with Autoware recommended Cyclone DDS settings.</li>
+<li><strong>Driver</strong>: Driver Version: 580.82.07 &amp; CUDA Version: 13.0</li>
+<li><strong>ROS</strong>: ROS Jazzy &amp; Zenoh</li>
 <li><strong>Runtime</strong>: TensorRT</li>
 <li><strong>OS</strong>: Ubuntu 24.04.3</li>
 </ul>
 <h4 id="benchmark-result">Benchmark Result<a class="headerlink" href="#benchmark-result" title="Permanent link">#</a></h4>
 <ul>
-<li>Zenoh:</li>
-</ul>
+<li>
+<p>Zenoh:</p>
 <table>
 <thead>
 <tr>
@@ -1363,43 +1363,39 @@
 </tr>
 </tbody>
 </table>
-<div class="codehilite"><pre><span></span><code>- SceneSeg
-
-```raw
-Current FPS: 58
+<ul>
+<li>SceneSeg</li>
+</ul>
+<div class="highlight"><pre><span></span><code>Current FPS: 58
 --- Per-frame Timing (microseconds) ---
 * Total processing time: 17229 us
 * Preprocessing time: 1200 us
 * Inference time: 15829 us      
 * Output time: 199 us
-```
-
-- DomainSeg
-
-```raw
-Current FPS: 58
+</code></pre></div>
+<ul>
+<li>DomainSeg</li>
+</ul>
+<div class="highlight"><pre><span></span><code>Current FPS: 58
 --- Per-frame Timing (microseconds) ---
 * Total processing time: 16625 us
 * Preprocessing time: 1203 us
 * Inference time: 15250 us
 * Output time: 171 us
-```
-
-- Scene3D
-
-```raw
-Current FPS: 57
+</code></pre></div>
+<ul>
+<li>Scene3D</li>
+</ul>
+<div class="highlight"><pre><span></span><code>Current FPS: 57
 --- Per-frame Timing (microseconds) ---
 * Total processing time: 17484 us
 * Preprocessing time: 204 us
 * Inference time: 16817 us
 * Output time: 462 us
-```
 </code></pre></div>
-
-<ul>
-<li>ROS 2:</li>
-</ul>
+</li>
+<li>
+<p>ROS 2:</p>
 <table>
 <thead>
 <tr>
@@ -1441,30 +1437,29 @@ Current FPS: 57
 </tr>
 </tbody>
 </table>
-<div class="codehilite"><pre><span></span><code>- SceneSeg
-
-```raw
-* Current FPS: 60
+<ul>
+<li>SceneSeg</li>
+</ul>
+<div class="highlight"><pre><span></span><code>* Current FPS: 60
 --- Per-frame Timing (microseconds) --- 
 * Total processing time: 16272 us
 * Preprocessing time: 178 us
 * Inference time: 15713 us
 * Output time: 381 us
-```
-
-- DomainSeg
-
-```raw
-* Current FPS: 60.00
+</code></pre></div>
+<ul>
+<li>DomainSeg</li>
+</ul>
+<div class="highlight"><pre><span></span><code>* Current FPS: 60.00
 --- Per-frame Timing (microseconds) --- 
 * Total processing time: 15393 us
 * Preprocessing time: 253 us
 * Inference time: 14672 us
 * Output time: 467 us
 -------------------------- 
-```
 </code></pre></div>
-
+</li>
+</ul>
 <h3 id="arm-processors-and-nvidia-agx-orin">ARM processors and nVidia AGX Orin<a class="headerlink" href="#arm-processors-and-nvidia-agx-orin" title="Permanent link">#</a></h3>
 <h4 id="hardware-spec_1">Hardware spec:<a class="headerlink" href="#hardware-spec_1" title="Permanent link">#</a></h4>
 <ul>
