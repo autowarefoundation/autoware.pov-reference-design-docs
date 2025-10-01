@@ -24,10 +24,14 @@ The section shows the benchmark results of the VisionPilot model on different ha
 
 #### Hardware Spec
 
-- OS: Ubuntu 24.04.3
-- CPU: Intel Xeon E-2278GE (16 cores)
-- GPU: NVIDIA Quadro RTX 5000
-- Memory: 64 GB
+
+- **CPU**:  Intel Xeon E-2278GE (16 cores)
+- **GPU**: NVIDIA Quadro RTX 5000.
+- **Memory**: 64GB LPDDR5/16G on RTX 5000
+- **Driver**: 
+- **ROS**: ROS Humble with Autoware recommended Cyclone DDS settings.
+- **Runtime**: TensorRT
+- **OS**: Ubuntu 24.04.3
 
 #### Benchmark Result
 
