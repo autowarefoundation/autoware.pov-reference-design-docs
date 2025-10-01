@@ -15,7 +15,9 @@ The evaluation for each model can be found on the GitHub repo of the PoV.
 ## System Evaluation
 
 The section shows the benchmark results of the VisionPilot model on different hardware environment as the references. There are two procedures to conduct the benchmark:
+
 - Just-based: [link](https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/zenoh/#usage)
+
 - Make-base: [link](https://github.com/NEWSLabNTU/2025-vision-pilot-benchmark)
 
 ### ADLINK AVA-3510
