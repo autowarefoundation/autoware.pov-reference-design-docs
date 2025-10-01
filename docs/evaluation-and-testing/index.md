@@ -40,9 +40,9 @@ The section shows the benchmark results of the VisionPilot model on different ha
 
 | Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
 |:---:|:---:|:---:|:---:|:---:|
-| SceneSeg   |   |   |   | 58  |
-| DomainSeg  |   |   |   | 58  |
-| Scene3D  |   |   |   | 57  |
+| SceneSeg   | 13%  | 65%  | 20G  | 58  |
+| DomainSeg  | 14%  | 62%  | 21G  | 58  |
+| Scene3D  | 15%  | 69%  |  19G | 57  |
 | EgoSpace |   |   |   |   |
 
     - SceneSeg
@@ -82,9 +82,9 @@ The section shows the benchmark results of the VisionPilot model on different ha
 
 | Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
 |:---:|:---:|:---:|:---:|:---:|
-| SceneSeg   |   |   |   | 60  |
-| DomainSeg  |   |   |   | 60  |
-| Scene3D  |   |   |   | 60  |
+| SceneSeg   | 17% | 72% | 6G | 60  |
+| DomainSeg  | 16% | 68% | 6G | 60  |
+| Scene3D  | 16% | 67% | 5.9G | 60  |
 | EgoSpace |   |   |   |   |
 
     - SceneSeg
