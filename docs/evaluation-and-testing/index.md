@@ -2,14 +2,21 @@
 
 (To be completed)
 
-## Model Evaluation
+The evaluation for each model can be found on the GitHub repo of the PoV. 
 
-- SceneSeg: https://github.com/autowarefoundation/autoware.privately-owned-vehicles/tree/main/SceneSeg#performance-results
-- DomainSeg: https://github.com/autowarefoundation/autoware.privately-owned-vehicles/tree/main/DomainSeg#performance-results
+- SceneSeg: [link](https://github.com/autowarefoundation/autoware.privately-owned-vehicles/tree/main/SceneSeg#performance-results)
+
+- DomainSeg: [link](https://github.com/autowarefoundation/autoware.privately-owned-vehicles/tree/main/DomainSeg#performance-results)
+
+- Scene3D: [link](https://github.com/autowarefoundation/autoware.privately-owned-vehicles/tree/main/Scene3D)
+
+- EgoPath: [link](https://github.com/autowarefoundation/autoware.privately-owned-vehicles/tree/main/EgoPath)
 
 ## System Evaluation
 
-The overall performance for the whole pipeline.
+The section shows the benchmark results of the VisionPilot model on different hardware environment as the references. There are two procedures to conduct the benchmark:
+- Just-based: [link](https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/software-configuration/zenoh/#usage)
+- Make-base: [link](https://github.com/NEWSLabNTU/2025-vision-pilot-benchmark)
 
 ### ADLINK AVA-3510
 
@@ -81,3 +88,26 @@ The overall performance for the whole pipeline.
     * Output time: 467 us
     -------------------------- 
     ```
+
+### ARM processors and nVidia AGX Orin
+#### Hardware spec:
+    - **CPU**: 12-core ARM Cortex-A78AE CPU at 2.2GHz.
+    - **GPU**: NVIDIA Ampere GPU with 2048 CUDA Cores.
+    - **Memory**: 64GB LPDDR5. The system and GPU memories are shared.
+    - **Driver**: The NVIDIA JetPack 6.0 (Ubuntu 22.04 LTS based) was used.
+    - **ROS**: ROS Humble with Autoware recommended Cyclone DDS settings.
+    - **Runtime**: ONNX runtime  1.19.0 or TensorRT
+
+#### Benchmark results: 
+
+| Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
+|:---:|:---:|:---:|:---:|:---:|
+| SceneSeg  <br> (ONNX runtime)| 91%  ~ 99%  | 99%  | 45G <br> including network model (~30G) + other process (15G)  | 8  |
+| SceneSeg  <br> (TensorRT runtime)  |   |   |   |   |
+| DomainSeg  |   |   |   |   |
+| Scene3D  |   |   |   |   |
+| EgoSpace |   |   |   |   |
+
+
+  - Demo Video: [link](https://drive.google.com/file/d/1P6NPrnKex2EkNgzlvM20Ap6YoPxFmVgl/view?usp=drive_link)
+
