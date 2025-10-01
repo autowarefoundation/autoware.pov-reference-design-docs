@@ -1311,74 +1311,161 @@
 </ul>
 <h4 id="benchmark-result">Benchmark Result<a class="headerlink" href="#benchmark-result" title="Permanent link">#</a></h4>
 <ul>
-<li>
-<p>Zenoh:</p>
-<ul>
-<li>SceneSeg</li>
+<li>Zenoh:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>Current FPS: 58
+<table>
+<thead>
+<tr>
+<th align="center">Model</th>
+<th align="center">CPU Utilization</th>
+<th align="center">GPU Utilization</th>
+<th align="center">Peak Memory Usage</th>
+<th align="center">Frame Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">SceneSeg</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">58</td>
+</tr>
+<tr>
+<td align="center">DomainSeg</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">58</td>
+</tr>
+<tr>
+<td align="center">Scene3D</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">57</td>
+</tr>
+<tr>
+<td align="center">EgoSpace</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><code>- SceneSeg
+
+```raw
+Current FPS: 58
 --- Per-frame Timing (microseconds) ---
 * Total processing time: 17229 us
 * Preprocessing time: 1200 us
 * Inference time: 15829 us      
 * Output time: 199 us
-</code></pre></div>
-<ul>
-<li>DomainSeg</li>
-</ul>
-<div class="highlight"><pre><span></span><code>Current FPS: 58
+```
+
+- DomainSeg
+
+```raw
+Current FPS: 58
 --- Per-frame Timing (microseconds) ---
 * Total processing time: 16625 us
 * Preprocessing time: 1203 us
 * Inference time: 15250 us
 * Output time: 171 us
-</code></pre></div>
-<ul>
-<li>Scene3D</li>
-</ul>
-<div class="highlight"><pre><span></span><code>Current FPS: 57
+```
+
+- Scene3D
+
+```raw
+Current FPS: 57
 --- Per-frame Timing (microseconds) ---
 * Total processing time: 17484 us
 * Preprocessing time: 204 us
 * Inference time: 16817 us
 * Output time: 462 us
+```
 </code></pre></div>
-</li>
-<li>
-<p>ROS 2:</p>
+
 <ul>
-<li>SceneSeg</li>
+<li>ROS 2:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>* Current FPS: 60
+<table>
+<thead>
+<tr>
+<th align="center">Model</th>
+<th align="center">CPU Utilization</th>
+<th align="center">GPU Utilization</th>
+<th align="center">Peak Memory Usage</th>
+<th align="center">Frame Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">SceneSeg</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">60</td>
+</tr>
+<tr>
+<td align="center">DomainSeg</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">60</td>
+</tr>
+<tr>
+<td align="center">Scene3D</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">60</td>
+</tr>
+<tr>
+<td align="center">EgoSpace</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><code>- SceneSeg
+
+```raw
+* Current FPS: 60
 --- Per-frame Timing (microseconds) --- 
 * Total processing time: 16272 us
 * Preprocessing time: 178 us
 * Inference time: 15713 us
 * Output time: 381 us
-</code></pre></div>
-<ul>
-<li>DomainSeg</li>
-</ul>
-<div class="highlight"><pre><span></span><code>* Current FPS: 60.00
+```
+
+- DomainSeg
+
+```raw
+* Current FPS: 60.00
 --- Per-frame Timing (microseconds) --- 
 * Total processing time: 15393 us
 * Preprocessing time: 253 us
 * Inference time: 14672 us
 * Output time: 467 us
 -------------------------- 
-</code></pre></div>
-</li>
-</ul>
-<h3 id="arm-processors-and-nvidia-agx-orin">ARM processors and nVidia AGX Orin<a class="headerlink" href="#arm-processors-and-nvidia-agx-orin" title="Permanent link">#</a></h3>
-<h4 id="hardware-spec_1">Hardware spec:<a class="headerlink" href="#hardware-spec_1" title="Permanent link">#</a></h4>
-<div class="codehilite"><pre><span></span><code>- **CPU**: 12-core ARM Cortex-A78AE CPU at 2.2GHz.
-- **GPU**: NVIDIA Ampere GPU with 2048 CUDA Cores.
-- **Memory**: 64GB LPDDR5. The system and GPU memories are shared.
-- **Driver**: The NVIDIA JetPack 6.0 (Ubuntu 22.04 LTS based) was used.
-- **ROS**: ROS Humble with Autoware recommended Cyclone DDS settings.
-- **Runtime**: ONNX runtime  1.19.0 or TensorRT
+```
 </code></pre></div>
 
+<h3 id="arm-processors-and-nvidia-agx-orin">ARM processors and nVidia AGX Orin<a class="headerlink" href="#arm-processors-and-nvidia-agx-orin" title="Permanent link">#</a></h3>
+<h4 id="hardware-spec_1">Hardware spec:<a class="headerlink" href="#hardware-spec_1" title="Permanent link">#</a></h4>
+<ul>
+<li><strong>CPU</strong>: 12-core ARM Cortex-A78AE CPU at 2.2GHz.</li>
+<li><strong>GPU</strong>: NVIDIA Ampere GPU with 2048 CUDA Cores.</li>
+<li><strong>Memory</strong>: 64GB LPDDR5. The system and GPU memories are shared.</li>
+<li><strong>Driver</strong>: The NVIDIA JetPack 6.0 (Ubuntu 22.04 LTS based) was used.</li>
+<li><strong>ROS</strong>: ROS Humble with Autoware recommended Cyclone DDS settings.</li>
+<li><strong>Runtime</strong>: ONNX runtime  1.19.0 or TensorRT</li>
+</ul>
 <h4 id="benchmark-results">Benchmark results:<a class="headerlink" href="#benchmark-results" title="Permanent link">#</a></h4>
 <table>
 <thead>
