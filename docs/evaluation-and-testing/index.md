@@ -132,13 +132,13 @@ Autonomous Driving Solutions)](https://www.adlinktech.com/products/Automotive-Co
 | Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
 |:---:|:---:|:---:|:---:|:---:|
 | SceneSeg  <br> (ONNX runtime)| 91%  ~ 99%  | 99%  | 45G <br> including network model (~30G) + other process (15G)  | 8  |
-| SceneSeg  <br> (TensorRT runtime - FP16)  |   |   |   | 29.12  |
-| DomainSeg <br> (TensorRT runtime - FP16) |   |   |   | 29.85  |
-| Scene3D <br> (TensorRT runtime - FP16) |   |   |   | 29.90  |
-| SceneSeg <br> (TensorRT runtime - FP32)  |   |   |   | 17.10  |
-| DomainSeg <br> (TensorRT runtime - FP32) |   |   |   |  17.07  |
-| Scene3D <br> (TensorRT runtime - FP32) |   |   |   |  17.03  |
-| EgoSpace |   |   |   |   |
+| SceneSeg  <br> (TensorRT runtime - FP16)  |  57 ~ 66 %  |74 %	  |0.8 % (~0.50 GB)  | 29.12  |
+| DomainSeg <br> (TensorRT runtime - FP16) | 56 ~ 60 % | 88 %  | 0.8 % (~0.50 GB)  | 29.85  |
+| Scene3D <br> (TensorRT runtime - FP16) | 53 ~ 56 % |82 %  | 0.6 % (~0.38 GB)  | 29.90  |
+| SceneSeg <br> (TensorRT runtime - FP32)  |  42 ~ 49 % |  99 % | 0.6 % (~0.38 GB)  | 17.10  |
+| DomainSeg <br> (TensorRT runtime - FP32) | 43 ~ 47 %  | 99 %  | 0.6 % (~0.38 GB)  |  17.07  |
+| Scene3D <br> (TensorRT runtime - FP32) | 44 ~ 46 %  |99 %  | 0.6 % (~0.38 GB)  |  17.03  |
+
 
 [link](https://github.com/NEWSLabNTU/2025-vision-pilot-benchmark/tree/main) to the instructions and complete results.
 
