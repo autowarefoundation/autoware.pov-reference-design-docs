@@ -1229,13 +1229,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#system-evaluation" class="md-nav__link">
+  <a href="#system-evaluation-results" class="md-nav__link">
     <span class="md-ellipsis">
-      System Evaluation
+      System Evaluation Results
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="System Evaluation">
+    <nav class="md-nav" aria-label="System Evaluation Results">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1281,7 +1281,6 @@
 
 
 <h1 id="evaluation-and-testing">Evaluation and Testing<a class="headerlink" href="#evaluation-and-testing" title="Permanent link">#</a></h1>
-<p>(To be completed)</p>
 <p>The evaluation for each model can be found on the GitHub repo of the PoV. </p>
 <ul>
 <li>
@@ -1297,7 +1296,7 @@
 <p>EgoPath: <a href="https://github.com/autowarefoundation/autoware.privately-owned-vehicles/tree/main/EgoPath">link</a></p>
 </li>
 </ul>
-<h2 id="system-evaluation">System Evaluation<a class="headerlink" href="#system-evaluation" title="Permanent link">#</a></h2>
+<h2 id="system-evaluation-results">System Evaluation Results<a class="headerlink" href="#system-evaluation-results" title="Permanent link">#</a></h2>
 <p>The section shows the benchmark results of the VisionPilot model on different hardware environment as the references. There are two procedures to conduct the benchmark:</p>
 <ul>
 <li>
@@ -1306,6 +1305,11 @@
 <li>
 <p>Make-base: <a href="https://github.com/NEWSLabNTU/2025-vision-pilot-benchmark">link</a></p>
 </li>
+</ul>
+<p>Two sets of computation configurations are used to benchmark the pipile:</p>
+<ul>
+<li>X86-based Computer: <a href="./#adlink-ava-3510">link</a></li>
+<li>ARM-based Computer: <a href="./#arm-processors-and-nvidia-agx-orin">link</a></li>
 </ul>
 <h3 id="adlink-ava-3510">ADLINK AVA-3510<a class="headerlink" href="#adlink-ava-3510" title="Permanent link">#</a></h3>
 <h4 id="hardware-spec">Hardware Spec<a class="headerlink" href="#hardware-spec" title="Permanent link">#</a></h4>
@@ -1318,6 +1322,9 @@
 <li><strong>Runtime</strong>: TensorRT</li>
 <li><strong>OS</strong>: Ubuntu 24.04.3</li>
 </ul>
+<p><a href="https://www.adlinktech.com/products/automotive-computing/autonomous-driving/ava-3510?lang=en">link to 3510 (discontinued)</a></p>
+<p><a href="https://www.adlinktech.com/products/Automotive-Computing/Autonomous-Driving/ADM-AL30?lang=en">link to AL30 (
+Autonomous Driving Solutions)</a></p>
 <h4 id="benchmark-result">Benchmark Result<a class="headerlink" href="#benchmark-result" title="Permanent link">#</a></h4>
 <ul>
 <li>
@@ -1470,6 +1477,7 @@
 <li><strong>ROS</strong>: ROS Humble with Autoware recommended Cyclone DDS settings.</li>
 <li><strong>Runtime</strong>: ONNX runtime  1.19.0 or TensorRT</li>
 </ul>
+<p><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/">link to nVidia Jetson Orin AGX</a></p>
 <h4 id="benchmark-results">Benchmark results:<a class="headerlink" href="#benchmark-results" title="Permanent link">#</a></h4>
 <table>
 <thead>
@@ -1490,25 +1498,46 @@
 <td align="center">8</td>
 </tr>
 <tr>
-<td align="center">SceneSeg  <br> (TensorRT runtime)</td>
+<td align="center">SceneSeg  <br> (TensorRT runtime - FP16)</td>
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
+<td align="center">29.12</td>
 </tr>
 <tr>
-<td align="center">DomainSeg</td>
+<td align="center">DomainSeg <br> (TensorRT runtime - FP16)</td>
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
+<td align="center">29.85</td>
 </tr>
 <tr>
-<td align="center">Scene3D</td>
+<td align="center">Scene3D <br> (TensorRT runtime - FP16)</td>
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
+<td align="center">29.90</td>
+</tr>
+<tr>
+<td align="center">SceneSeg <br> (TensorRT runtime - FP32)</td>
 <td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">17.10</td>
+</tr>
+<tr>
+<td align="center">DomainSeg <br> (TensorRT runtime - FP32)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">17.07</td>
+</tr>
+<tr>
+<td align="center">Scene3D <br> (TensorRT runtime - FP32)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">17.03</td>
 </tr>
 <tr>
 <td align="center">EgoSpace</td>
@@ -1519,6 +1548,7 @@
 </tr>
 </tbody>
 </table>
+<p><a href="https://github.com/NEWSLabNTU/2025-vision-pilot-benchmark/tree/main">link</a> to the instructions and complete results.</p>
 <ul>
 <li>Demo Video: <a href="https://drive.google.com/file/d/1P6NPrnKex2EkNgzlvM20Ap6YoPxFmVgl/view?usp=drive_link">link</a></li>
 </ul>
