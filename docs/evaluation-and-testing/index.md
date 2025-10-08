@@ -1,7 +1,5 @@
 # Evaluation and Testing
 
-(To be completed)
-
 The evaluation for each model can be found on the GitHub repo of the PoV. 
 
 - SceneSeg: [link](https://github.com/autowarefoundation/autoware.privately-owned-vehicles/tree/main/SceneSeg#performance-results)
@@ -12,7 +10,7 @@ The evaluation for each model can be found on the GitHub repo of the PoV.
 
 - EgoPath: [link](https://github.com/autowarefoundation/autoware.privately-owned-vehicles/tree/main/EgoPath)
 
-## System Evaluation
+## System Evaluation Results
 
 The section shows the benchmark results of the VisionPilot model on different hardware environment as the references. There are two procedures to conduct the benchmark:
 
@@ -20,9 +18,14 @@ The section shows the benchmark results of the VisionPilot model on different ha
 
 - Make-base: [link](https://github.com/NEWSLabNTU/2025-vision-pilot-benchmark)
 
+Two sets of computation configurations are used to benchmark the pipile:
+
+- X86-based Computer: [link](index.md#adlink-ava-3510)
+- ARM-based Computer: [link](index.md#arm-processors-and-nvidia-agx-orin)
+
 ### ADLINK AVA-3510
 
-#### Hardware Spec
+#### Hardware Spec 
 
 - **CPU**:  Intel Xeon E-2278GE (16 cores)
 - **GPU**: NVIDIA Quadro RTX 5000.
@@ -31,6 +34,11 @@ The section shows the benchmark results of the VisionPilot model on different ha
 - **ROS**: ROS Jazzy & Zenoh
 - **Runtime**: TensorRT
 - **OS**: Ubuntu 24.04.3
+
+[link to 3510 (discontinued)](https://www.adlinktech.com/products/automotive-computing/autonomous-driving/ava-3510?lang=en)
+
+[link to AL30 (
+Autonomous Driving Solutions)](https://www.adlinktech.com/products/Automotive-Computing/Autonomous-Driving/ADM-AL30?lang=en)
 
 #### Benchmark Result
 
@@ -117,16 +125,23 @@ The section shows the benchmark results of the VisionPilot model on different ha
 - **ROS**: ROS Humble with Autoware recommended Cyclone DDS settings.
 - **Runtime**: ONNX runtime  1.19.0 or TensorRT
 
+[link to nVidia Jetson Orin AGX](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/)
+
 #### Benchmark results: 
 
 | Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
 |:---:|:---:|:---:|:---:|:---:|
 | SceneSeg  <br> (ONNX runtime)| 91%  ~ 99%  | 99%  | 45G <br> including network model (~30G) + other process (15G)  | 8  |
-| SceneSeg  <br> (TensorRT runtime)  |   |   |   |   |
-| DomainSeg  |   |   |   |   |
-| Scene3D  |   |   |   |   |
+| SceneSeg  <br> (TensorRT runtime - FP16)  |   |   |   | 29.12  |
+| DomainSeg <br> (TensorRT runtime - FP16) |   |   |   | 29.85  |
+| Scene3D <br> (TensorRT runtime - FP16) |   |   |   | 29.90  |
+| SceneSeg <br> (TensorRT runtime - FP32)  |   |   |   | 17.10  |
+| DomainSeg <br> (TensorRT runtime - FP32) |   |   |   |  17.07  |
+| Scene3D <br> (TensorRT runtime - FP32) |   |   |   |  17.03  |
 | EgoSpace |   |   |   |   |
 
+[link](https://github.com/NEWSLabNTU/2025-vision-pilot-benchmark/tree/main) to the instructions and complete results.
 
-  - Demo Video: [link](https://drive.google.com/file/d/1P6NPrnKex2EkNgzlvM20Ap6YoPxFmVgl/view?usp=drive_link)
+
+- Demo Video: [link](https://drive.google.com/file/d/1P6NPrnKex2EkNgzlvM20Ap6YoPxFmVgl/view?usp=drive_link)
 
