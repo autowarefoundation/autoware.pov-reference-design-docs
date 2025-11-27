@@ -145,3 +145,21 @@ Autonomous Driving Solutions)](https://www.adlinktech.com/products/Automotive-Co
 
 - Demo Video: [link](https://drive.google.com/file/d/1P6NPrnKex2EkNgzlvM20Ap6YoPxFmVgl/view?usp=drive_link)
 
+### Advantech AFE-R750
+#### Hardware spec:
+- **CPU**: 8-core NVIDIA Arm® Cortex A78AE v8.2.
+- **GPU**: 1792-core NVIDIA Ampere GPU with 56 Tensor Cores.
+- **Memory**: 32GB LPDDR5.
+- **Driver**: The NVIDIA JetPack 6.1.
+- **ROS**: ROS Humble.
+- **Runtime**: TensorRT
+
+[link to Advantech AFE-R750](https://www.advantech.com/zh-tw/products/8d5aadd0-1ef5-4704-a9a1-504718fb3b41/afe-r750/mod_779d2a74-61d9-4d78-a4e0-2ca07afbd64b)
+
+#### Benchmark results: 
+
+| Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
+|:---:|:---:|:---:|:---:|:---:|
+| SceneSeg  <br> (TensorRT runtime - FP16)  |  45 ~ 50 %  |80 %	  |< 0.50 GB  | 21  |
+| DomainSeg <br> (TensorRT runtime - FP16) | 55 ~ 60 % | 90 %  | < 0.50 GB  | 21  |
+| Scene3D <br> (TensorRT runtime - FP16) | 40 ~ 45 % | 85 %  | < 0.40 GB  | 22  |
