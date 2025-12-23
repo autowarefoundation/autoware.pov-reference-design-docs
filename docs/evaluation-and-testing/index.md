@@ -18,7 +18,7 @@ The section shows the benchmark results of the VisionPilot model on different ha
 
 - Make-base: [link](https://github.com/NEWSLabNTU/2025-vision-pilot-benchmark)
 
-Two sets of computation configurations are used to benchmark the pipile:
+Two sets of computation configurations are used to benchmark the pipeline:
 
 - X86-based Computer: [link](index.md#adlink-adm-al30)
 - ARM-based Computer: [link](index.md#arm-processors-and-nvidia-agx-orin)
