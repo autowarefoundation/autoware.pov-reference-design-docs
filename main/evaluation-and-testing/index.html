@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../assets/images/autoware-foundation.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1356,10 +1356,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#adlink-ava-3510" class="md-nav__link">
+  <a href="#adlink-adm-al30" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ADLINK AVA-3510
+        ADLINK ADM-AL30
       
     </span>
   </a>
@@ -1439,23 +1439,22 @@
 <p>Make-base: <a href="https://github.com/NEWSLabNTU/2025-vision-pilot-benchmark">link</a></p>
 </li>
 </ul>
-<p>Two sets of computation configurations are used to benchmark the pipile:</p>
+<p>Two sets of computation configurations are used to benchmark the pipeline:</p>
 <ul>
-<li>X86-based Computer: <a href="./#adlink-ava-3510">link</a></li>
+<li>X86-based Computer: <a href="./#adlink-adm-al30">link</a></li>
 <li>ARM-based Computer: <a href="./#arm-processors-and-nvidia-agx-orin">link</a></li>
 </ul>
-<h3 id="adlink-ava-3510">ADLINK AVA-3510<a class="headerlink" href="#adlink-ava-3510" title="Permanent link">#</a></h3>
+<h3 id="adlink-adm-al30">ADLINK ADM-AL30<a class="headerlink" href="#adlink-adm-al30" title="Permanent link">#</a></h3>
 <h4 id="hardware-spec">Hardware Spec<a class="headerlink" href="#hardware-spec" title="Permanent link">#</a></h4>
 <ul>
-<li><strong>CPU</strong>:  Intel Xeon E-2278GE (16 cores)</li>
-<li><strong>GPU</strong>: NVIDIA Quadro RTX 5000.</li>
-<li><strong>Memory</strong>: 64GB LPDDR5/16G on RTX 5000</li>
-<li><strong>Driver</strong>: Driver Version: 580.82.07 &amp; CUDA Version: 13.0</li>
-<li><strong>ROS</strong>: ROS Jazzy &amp; Zenoh</li>
+<li><strong>CPU</strong>:  Intel 12th Gen Core i7-12700E (12 cores / 20 threads)</li>
+<li><strong>GPU</strong>: NVIDIA RTX 4000 SFF Ada (20 GB VRAM)</li>
+<li><strong>Memory</strong>: 128 GB DDR5 ECC</li>
+<li><strong>Driver</strong>: Driver Version: 580.95.05 &amp; CUDA Version: 13.0</li>
+<li><strong>ROS</strong>: ROS Humble &amp; Zenoh</li>
 <li><strong>Runtime</strong>: TensorRT</li>
-<li><strong>OS</strong>: Ubuntu 24.04.3</li>
+<li><strong>OS</strong>: Ubuntu 22.04.5</li>
 </ul>
-<p><a href="https://www.adlinktech.com/products/automotive-computing/autonomous-driving/ava-3510?lang=en">link to 3510 (discontinued)</a></p>
 <p><a href="https://www.adlinktech.com/products/Automotive-Computing/Autonomous-Driving/ADM-AL30?lang=en">link to AL30 (
 Autonomous Driving Solutions)</a></p>
 <h4 id="benchmark-result">Benchmark Result<a class="headerlink" href="#benchmark-result" title="Permanent link">#</a></h4>
@@ -1475,24 +1474,24 @@ Autonomous Driving Solutions)</a></p>
 <tbody>
 <tr>
 <td align="center">SceneSeg</td>
-<td align="center">13%</td>
-<td align="center">65%</td>
-<td align="center">20G</td>
-<td align="center">58</td>
+<td align="center">7%</td>
+<td align="center">37.9%</td>
+<td align="center">3.25G</td>
+<td align="center">50</td>
 </tr>
 <tr>
 <td align="center">DomainSeg</td>
-<td align="center">14%</td>
-<td align="center">62%</td>
-<td align="center">21G</td>
-<td align="center">58</td>
+<td align="center">7%</td>
+<td align="center">38.4%</td>
+<td align="center">3.28G</td>
+<td align="center">55</td>
 </tr>
 <tr>
 <td align="center">Scene3D</td>
-<td align="center">15%</td>
-<td align="center">69%</td>
-<td align="center">19G</td>
-<td align="center">57</td>
+<td align="center">7%</td>
+<td align="center">42.4%</td>
+<td align="center">3.21G</td>
+<td align="center">55.56</td>
 </tr>
 <tr>
 <td align="center">EgoSpace</td>
@@ -1506,32 +1505,32 @@ Autonomous Driving Solutions)</a></p>
 <ul>
 <li>SceneSeg</li>
 </ul>
-<div class="highlight"><pre><span></span><code>Current FPS: 58
+<div class="highlight"><pre><span></span><code>* Current FPS: 50.00
 --- Per-frame Timing (microseconds) ---
-* Total processing time: 17229 us
-* Preprocessing time: 1200 us
-* Inference time: 15829 us      
-* Output time: 199 us
+* Total processing time: 23450 us
+* Preprocessing time: 670 us
+* Inference time: 22460 us
+* Output time: 319 us
 </code></pre></div>
 <ul>
 <li>DomainSeg</li>
 </ul>
-<div class="highlight"><pre><span></span><code>Current FPS: 58
+<div class="highlight"><pre><span></span><code>* Current FPS: 55.00
 --- Per-frame Timing (microseconds) ---
-* Total processing time: 16625 us
-* Preprocessing time: 1203 us
-* Inference time: 15250 us
-* Output time: 171 us
+* Total processing time: 14539 us
+* Preprocessing time: 330 us
+* Inference time: 14007 us
+* Output time: 201 us
 </code></pre></div>
 <ul>
 <li>Scene3D</li>
 </ul>
-<div class="highlight"><pre><span></span><code>Current FPS: 57
+<div class="highlight"><pre><span></span><code>* Current FPS: 55.56
 --- Per-frame Timing (microseconds) ---
-* Total processing time: 17484 us
-* Preprocessing time: 204 us
-* Inference time: 16817 us
-* Output time: 462 us
+* Total processing time: 18802 us
+* Preprocessing time: 726 us
+* Inference time: 16102 us
+* Output time: 1973 us
 </code></pre></div>
 </li>
 <li>
@@ -1549,24 +1548,24 @@ Autonomous Driving Solutions)</a></p>
 <tbody>
 <tr>
 <td align="center">SceneSeg</td>
-<td align="center">17%</td>
-<td align="center">72%</td>
-<td align="center">6G</td>
-<td align="center">60</td>
+<td align="center">7%</td>
+<td align="center">39%</td>
+<td align="center">2.89G</td>
+<td align="center">46.67</td>
 </tr>
 <tr>
 <td align="center">DomainSeg</td>
-<td align="center">16%</td>
-<td align="center">68%</td>
-<td align="center">6G</td>
-<td align="center">60</td>
+<td align="center">7%</td>
+<td align="center">41%</td>
+<td align="center">2.98G</td>
+<td align="center">53.85</td>
 </tr>
 <tr>
 <td align="center">Scene3D</td>
-<td align="center">16%</td>
-<td align="center">67%</td>
-<td align="center">5.9G</td>
-<td align="center">60</td>
+<td align="center">6%</td>
+<td align="center">40%</td>
+<td align="center">2.76G</td>
+<td align="center">50</td>
 </tr>
 <tr>
 <td align="center">EgoSpace</td>
@@ -1580,23 +1579,32 @@ Autonomous Driving Solutions)</a></p>
 <ul>
 <li>SceneSeg</li>
 </ul>
-<div class="highlight"><pre><span></span><code>* Current FPS: 60
+<div class="highlight"><pre><span></span><code>* Current FPS: 46.67
 --- Per-frame Timing (microseconds) --- 
-* Total processing time: 16272 us
-* Preprocessing time: 178 us
-* Inference time: 15713 us
-* Output time: 381 us
+* Total processing time: 23795 us
+* Preprocessing time: 739 us
+* Inference time: 22058 us
+* Output time: 996 us
 </code></pre></div>
 <ul>
 <li>DomainSeg</li>
 </ul>
-<div class="highlight"><pre><span></span><code>* Current FPS: 60.00
+<div class="highlight"><pre><span></span><code>* Current FPS: 53.85
 --- Per-frame Timing (microseconds) --- 
-* Total processing time: 15393 us
-* Preprocessing time: 253 us
-* Inference time: 14672 us
-* Output time: 467 us
--------------------------- 
+* Total processing time: 17951 us
+* Preprocessing time: 746 us
+* Inference time: 16390 us
+* Output time: 814 us
+</code></pre></div>
+<ul>
+<li>Scene3D</li>
+</ul>
+<div class="highlight"><pre><span></span><code>* Current FPS: 50.00
+--- Per-frame Timing (microseconds) ---
+* Total processing time: 12981 us
+* Preprocessing time: 211 us
+* Inference time: 11026 us
+* Output time: 1743 us
 </code></pre></div>
 </li>
 </ul>
@@ -1807,10 +1815,10 @@ Autonomous Driving Solutions)</a></p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.footer"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
