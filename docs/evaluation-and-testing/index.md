@@ -44,42 +44,42 @@ Autonomous Driving Solutions)](https://www.adlinktech.com/products/Automotive-Co
 
     | Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
     |:---:|:---:|:---:|:---:|:---:|
-    | SceneSeg   | 7%  | 37%  | 3.33G  | 53.19  |
-    | DomainSeg  | 7%  | 40%  | 3.37G  | 53.33  |
-    | Scene3D  | 10%  | 38%  |  3.22G | 43.87  |
+    | SceneSeg   | 7%  | 37.9%  | 3.25G  | 50  |
+    | DomainSeg  | 7%  | 38.4%  | 3.28G  | 55  |
+    | Scene3D  | 7%  | 42.4%  |  3.21G | 55.56  |
     | EgoSpace |   |   |   |   |
 
     - SceneSeg
   
     ```raw
-    * Current FPS: 53.19
+    * Current FPS: 50.00
     --- Per-frame Timing (microseconds) ---
-    * Total processing time: 23336 us
-    * Preprocessing time: 496 us
-    * Inference time: 22028 us
-    * Output time: 811 us
+    * Total processing time: 23450 us
+    * Preprocessing time: 670 us
+    * Inference time: 22460 us
+    * Output time: 319 us
     ```
 
     - DomainSeg
 
     ```raw
-    * Current FPS: 53.33
+    * Current FPS: 55.00
     --- Per-frame Timing (microseconds) ---
-    * Total processing time: 22492 us
-    * Preprocessing time: 585 us
-    * Inference time: 21522 us
-    * Output time: 384 us
+    * Total processing time: 14539 us
+    * Preprocessing time: 330 us
+    * Inference time: 14007 us
+    * Output time: 201 us
     ```
 
     - Scene3D
 
     ```raw
-    * Current FPS: 43.87
+    * Current FPS: 55.56
     --- Per-frame Timing (microseconds) ---
-    * Total processing time: 22202 us
-    * Preprocessing time: 797 us
-    * Inference time: 20115 us
-    * Output time: 1289 us
+    * Total processing time: 18802 us
+    * Preprocessing time: 726 us
+    * Inference time: 16102 us
+    * Output time: 1973 us
     ```
 
 - ROS 2:
