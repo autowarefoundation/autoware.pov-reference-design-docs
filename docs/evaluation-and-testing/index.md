@@ -18,24 +18,22 @@ The section shows the benchmark results of the VisionPilot model on different ha
 
 - Make-base: [link](https://github.com/NEWSLabNTU/2025-vision-pilot-benchmark)
 
-Two sets of computation configurations are used to benchmark the pipile:
+Two sets of computation configurations are used to benchmark the pipeline:
 
-- X86-based Computer: [link](index.md#adlink-ava-3510)
+- X86-based Computer: [link](index.md#adlink-adm-al30)
 - ARM-based Computer: [link](index.md#arm-processors-and-nvidia-agx-orin)
 
-### ADLINK AVA-3510
+### ADLINK ADM-AL30
 
 #### Hardware Spec 
 
-- **CPU**:  Intel Xeon E-2278GE (16 cores)
-- **GPU**: NVIDIA Quadro RTX 5000.
-- **Memory**: 64GB LPDDR5/16G on RTX 5000
-- **Driver**: Driver Version: 580.82.07 & CUDA Version: 13.0
-- **ROS**: ROS Jazzy & Zenoh
+- **CPU**:  Intel 12th Gen Core i7-12700E (12 cores / 20 threads)
+- **GPU**: NVIDIA RTX 4000 SFF Ada (20 GB VRAM)
+- **Memory**: 128 GB DDR5 ECC
+- **Driver**: Driver Version: 580.95.05 & CUDA Version: 13.0
+- **ROS**: ROS Humble & Zenoh
 - **Runtime**: TensorRT
-- **OS**: Ubuntu 24.04.3
-
-[link to 3510 (discontinued)](https://www.adlinktech.com/products/automotive-computing/autonomous-driving/ava-3510?lang=en)
+- **OS**: Ubuntu 22.04.5
 
 [link to AL30 (
 Autonomous Driving Solutions)](https://www.adlinktech.com/products/Automotive-Computing/Autonomous-Driving/ADM-AL30?lang=en)
@@ -46,74 +44,84 @@ Autonomous Driving Solutions)](https://www.adlinktech.com/products/Automotive-Co
 
     | Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
     |:---:|:---:|:---:|:---:|:---:|
-    | SceneSeg   | 13%  | 65%  | 20G  | 58  |
-    | DomainSeg  | 14%  | 62%  | 21G  | 58  |
-    | Scene3D  | 15%  | 69%  |  19G | 57  |
+    | SceneSeg   | 7%  | 37.9%  | 3.25G  | 50  |
+    | DomainSeg  | 7%  | 38.4%  | 3.28G  | 55  |
+    | Scene3D  | 7%  | 42.4%  |  3.21G | 55.56  |
     | EgoSpace |   |   |   |   |
 
     - SceneSeg
   
     ```raw
-    Current FPS: 58
+    * Current FPS: 50.00
     --- Per-frame Timing (microseconds) ---
-    * Total processing time: 17229 us
-    * Preprocessing time: 1200 us
-    * Inference time: 15829 us      
-    * Output time: 199 us
+    * Total processing time: 23450 us
+    * Preprocessing time: 670 us
+    * Inference time: 22460 us
+    * Output time: 319 us
     ```
 
     - DomainSeg
 
     ```raw
-    Current FPS: 58
+    * Current FPS: 55.00
     --- Per-frame Timing (microseconds) ---
-    * Total processing time: 16625 us
-    * Preprocessing time: 1203 us
-    * Inference time: 15250 us
-    * Output time: 171 us
+    * Total processing time: 14539 us
+    * Preprocessing time: 330 us
+    * Inference time: 14007 us
+    * Output time: 201 us
     ```
 
     - Scene3D
 
     ```raw
-    Current FPS: 57
+    * Current FPS: 55.56
     --- Per-frame Timing (microseconds) ---
-    * Total processing time: 17484 us
-    * Preprocessing time: 204 us
-    * Inference time: 16817 us
-    * Output time: 462 us
+    * Total processing time: 18802 us
+    * Preprocessing time: 726 us
+    * Inference time: 16102 us
+    * Output time: 1973 us
     ```
 
 - ROS 2:
 
     | Model  | CPU Utilization | GPU Utilization | Peak Memory Usage  | Frame Rate  |
     |:---:|:---:|:---:|:---:|:---:|
-    | SceneSeg   | 17% | 72% | 6G | 60  |
-    | DomainSeg  | 16% | 68% | 6G | 60  |
-    | Scene3D  | 16% | 67% | 5.9G | 60  |
+    | SceneSeg   | 7% | 39% | 2.89G | 46.67  |
+    | DomainSeg  | 7% | 41% | 2.98G | 53.85  |
+    | Scene3D  | 6% | 40% | 2.76G | 50  |
     | EgoSpace |   |   |   |   |
 
     - SceneSeg
   
     ```raw
-    * Current FPS: 60
+    * Current FPS: 46.67
     --- Per-frame Timing (microseconds) --- 
-    * Total processing time: 16272 us
-    * Preprocessing time: 178 us
-    * Inference time: 15713 us
-    * Output time: 381 us
+    * Total processing time: 23795 us
+    * Preprocessing time: 739 us
+    * Inference time: 22058 us
+    * Output time: 996 us
     ```
 
     - DomainSeg
 
     ```raw
-    * Current FPS: 60.00
+    * Current FPS: 53.85
     --- Per-frame Timing (microseconds) --- 
-    * Total processing time: 15393 us
-    * Preprocessing time: 253 us
-    * Inference time: 14672 us
-    * Output time: 467 us
-    -------------------------- 
+    * Total processing time: 17951 us
+    * Preprocessing time: 746 us
+    * Inference time: 16390 us
+    * Output time: 814 us
+    ```
+
+    - Scene3D
+
+    ```raw
+    * Current FPS: 50.00
+    --- Per-frame Timing (microseconds) ---
+    * Total processing time: 12981 us
+    * Preprocessing time: 211 us
+    * Inference time: 11026 us
+    * Output time: 1743 us
     ```
 
 ### ARM processors and nVidia AGX Orin
